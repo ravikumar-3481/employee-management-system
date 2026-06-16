@@ -153,7 +153,7 @@ export default function EmployeeForm({ employee, onCancel, onSuccess }) {
             <input 
               type="text" 
               className="form-input" 
-              placeholder="John"
+              placeholder="your name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
@@ -166,7 +166,7 @@ export default function EmployeeForm({ employee, onCancel, onSuccess }) {
             <input 
               type="text" 
               className="form-input" 
-              placeholder="Doe"
+              placeholder="your lastname"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
@@ -179,7 +179,7 @@ export default function EmployeeForm({ employee, onCancel, onSuccess }) {
             <input 
               type="email" 
               className="form-input" 
-              placeholder="john.doe@company.com"
+              placeholder="your email id"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -192,7 +192,7 @@ export default function EmployeeForm({ employee, onCancel, onSuccess }) {
             <input 
               type="tel" 
               className="form-input" 
-              placeholder="+1 (555) 000-0000"
+              placeholder="your phone number"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -232,7 +232,7 @@ export default function EmployeeForm({ employee, onCancel, onSuccess }) {
 
           {/* Salary */}
           <div className="form-group">
-            <label className="form-label">Annual Salary (USD) *</label>
+            <label className="form-label">Annual Salary *</label>
             <input 
               type="number" 
               className="form-input" 
